@@ -114,7 +114,7 @@ const AIChatBot = () => {
       );
     } else {
       try {
-  const apiKey = "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";
+  const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY;
   console.log("Using API key:", apiKey); // ✅ Add this line
 
   if (!apiKey) {
